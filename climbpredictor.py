@@ -28,3 +28,7 @@ if __name__ == "__main__":
 ## add in locale functionality
 # i.e. - type "Las Vegas" or your area code and get
 # a climbing location within 1 hr from you
+#
+# Add in prompts for asking what kind of climbing you're able to do right now
+#   * bouldering, sport, trad
+#   * if gym, shoot for style and grade/exercises
