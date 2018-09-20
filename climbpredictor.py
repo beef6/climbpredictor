@@ -9,12 +9,10 @@ import random
 import time
 
 def main():
-    climbing_places = ["Red Rock is lookin' nice tbh.", "Go to Mt. Charleston and SHRED IT!",
-                       "Go to the gym - rest, recupe, and rip 'em back my guy.", "Calisthenics lmao run pussy"
-                      ]    # PEPS compliance
+    climbing_places = {"702" : ["Red Rock is lookin' nice tbh.", "Go to Mt. Charleston and SHRED IT!", "Go to the gym - rest, recupe, and rip 'em back my guy.", "Calisthenics lmao run pussy"], "89124" : ["Robber's Roost", "Roadkill Traverse", "Starter Crag", "The Subway"]}    # PEPS compliance
     print("Climb Predictor v0.02")
-    input("type 'where should I go?' or anything to predict a climb session!: ")
-    print(random.choice(climbing_places))
+    location = climbing_places[input("Enter the area code you plan to climb in: ")]
+    print(random.choice(location))
     go_again = input("Is that a good spot right now? (y/n): ")
     if go_again[0].lower() == "n":
         sys.exit(0)
