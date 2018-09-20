@@ -9,7 +9,12 @@ import random
 import time
 
 def main():
-    climbing_places = {"702" : ["Red Rock is lookin' nice tbh.", "Go to Mt. Charleston and SHRED IT!", "Go to the gym - rest, recupe, and rip 'em back my guy.", "Calisthenics lmao run pussy"], "89124" : ["Robber's Roost", "Roadkill Traverse", "Starter Crag", "The Subway"], "LA" : ["Stony Point Park", "La Brea Tar Pits", "Skid Row"]}
+    climbing_places = {"702" : ["Red Rock is lookin' nice tbh.", 
+        "Go to Mt. Charleston and SHRED IT!", 
+        "Go to the gym - rest, recupe, and rip 'em back my guy.", 
+        "Calisthenics lmao run pussy"], 
+        "89124" : ["Robber's Roost", "Roadkill Traverse", "Starter Crag", "The Subway"], 
+        "LA" : ["Stony Point Park", "La Brea Tar Pits", "Skid Row"]}
     print("Climb Predictor v0.02")
     location = climbing_places[input("Enter the area code you plan to climb in: ")]
     print(random.choice(location))
